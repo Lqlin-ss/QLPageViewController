@@ -1,6 +1,8 @@
 # QLPageViewController
 翻页滚动，类似头条那种，适合做新闻媒体或者订单类的页面
 
+(声明：此工具在写的时候借鉴了别人的方法比如颜色渐变等，具体作者不详)
+
 使用非常简单，把demo下载下来之后，把```QLPageViewControllerTool```文件夹拖入你的工程。
 
 在使用界面导入 ```#import "QLPageView.h"```

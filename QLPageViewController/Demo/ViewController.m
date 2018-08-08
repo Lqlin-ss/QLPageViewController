@@ -49,14 +49,14 @@
     NSArray *titles = @[@"第一页", @"第二页", @"3", @"第4444444444页", @"第5页", @"第六页"];
     
     CGFloat y = KIsiPhoneX ? 88 : 64;
-    //同样的页面跟换数据源的话，直接循环
-    QLPageView *toolView = [[QLPageView alloc] initWithFrame:CGRectMake(0, y, self.view.bounds.size.width, self.view.bounds.size.height - 64) viewControllers:vcs titles:titles];
+    //同样的页面跟换数据源的话，直接循环 
+    QLPageView *toolView = [[QLPageView alloc] initWithFrame:CGRectMake(0, y, self.view.bounds.size.width, self.view.bounds.size.height - y) viewControllers:vcs titles:titles];
     toolView.mDelegate = self;
     
     toolView.itemNormalColor = [UIColor blackColor];
     toolView.itemSelectedColor = [UIColor redColor];
     toolView.hideShadow = NO;
-//    toolView.selectedIndex = 3;
+    toolView.selectedIndex = 3;
     
     [toolView showInViewController:self];
 }
@@ -64,8 +64,6 @@
 #pragma mark - QLPageViewDelegate
 - (void)selectedPageOfIndex:(NSInteger)index{
     NSLog(@"selected   %ld", index);
-    
-    NSLog(@"%.1f, %.1f", [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     
 }
 

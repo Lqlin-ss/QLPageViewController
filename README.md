@@ -1,7 +1,7 @@
 # QLPageViewController
 翻页滚动，类似头条那种，适合做新闻媒体或者订单类的页面
 
-使用非常简单，把demo下载下来之后，把QLPageViewControllerTool文件夹拖入你的工程。
+使用非常简单，把demo下载下来之后，把```QLPageViewControllerTool```文件夹拖入你的工程。
 
 在使用界面导入 ```#import "QLPageView.h"```
 
@@ -37,3 +37,8 @@ NSArray *vcs = @[[[TestViewController1 alloc] init],
     NSLog(@"selected   %ld", index);
 }
 ```
+
+### 效果图
+[](https://github.com/Lqlin-ss/QLPageViewController/blob/master/QQ20180808-143301.png)
+
+

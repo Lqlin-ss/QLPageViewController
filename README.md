@@ -39,6 +39,6 @@ NSArray *vcs = @[[[TestViewController1 alloc] init],
 ```
 
 ### 效果图
-[](https://github.com/Lqlin-ss/QLPageViewController/blob/master/QQ20180808-143301.png)
+![](https://github.com/Lqlin-ss/QLPageViewController/blob/master/QQ20180808-143301.png)
 
 

@@ -17,7 +17,7 @@ NSArray *vcs = @[[[TestViewController1 alloc] init],
     
     CGFloat y = KIsiPhoneX ? 88 : 64;
     //同样的页面跟换数据源的话，直接循环
-    QLPageView *toolView = [[QLPageView alloc] initWithFrame:CGRectMake(0, y, self.view.bounds.size.width, self.view.bounds.size.height - 64) viewControllers:vcs titles:titles];
+    QLPageView *toolView = [[QLPageView alloc] initWithFrame:CGRectMake(0, y, self.view.bounds.size.width, self.view.bounds.size.height - y) viewControllers:vcs titles:titles];
     toolView.mDelegate = self;
     
     //下面这几个属性自由选择是赋值
@@ -37,6 +37,13 @@ NSArray *vcs = @[[[TestViewController1 alloc] init],
     NSLog(@"selected   %ld", index);
 }
 ```
+
+不需要居中的话只需要把这里注释掉
+![](https://github.com/Lqlin-ss/QLPageViewController/blob/master/QQ20180808-143359.png)
+
+写的时候分析附图，纠正一下，既然viewWillAppear每次执行，那么肯定比在scrollowView上面横向加多个viewController这种一次性全部加载的性能要好很多！
+![](https://github.com/Lqlin-ss/QLPageViewController/blob/master/QQ20180807-154705.png)
+
 
 ### 效果图
 ![](https://github.com/Lqlin-ss/QLPageViewController/blob/master/QQ20180808-143301.png)
